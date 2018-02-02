@@ -76,7 +76,7 @@ public class FXMLBrowserViewController implements Initializable {
     @FXML
     private void butTextAction(ActionEvent event) {
         List<String> list= extractTextFromPage();
-        //list.forEach(s -> System.out.println(s));
+        list.forEach(s -> System.out.println(s));
         
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("FXMLText.fxml"));
