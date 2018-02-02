@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="477.0" prefWidth="693.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxbrowser.FXMLBrowserViewController">
+   <center>
+      <WebView fx:id="webView" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+   <top>
+      <AnchorPane prefHeight="45.0" prefWidth="693.0" style="-fx-background-color: lightyellow;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="butGo" layoutY="9.0" mnemonicParsing="false" onAction="#butGoAction" prefHeight="27.0" prefWidth="36.0" text="Go" AnchorPane.leftAnchor="5.0">
+               <font>
+                  <Font size="12.0" />
+               </font></Button>
+            <TextField fx:id="txfAddress" layoutX="82.0" layoutY="9.0" onAction="#butGoAction" prefHeight="27.0" prefWidth="283.0" promptText="insert URL" text="/Users/jpc/∑/kunstler.html" AnchorPane.leftAnchor="85.0" AnchorPane.rightAnchor="265.0" />
+            <ComboBox fx:id="cmbAddress" layoutX="372.0" layoutY="9.0" prefHeight="27.0" prefWidth="248.0" AnchorPane.rightAnchor="5.0" />
+            <Button fx:id="butBack" layoutX="45.0" layoutY="9.0" mnemonicParsing="false" onAction="#butBackAction" prefHeight="27.0" prefWidth="36.0" text="B" AnchorPane.leftAnchor="45.0">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </top>
+   <bottom>
+      <BorderPane prefHeight="32.0" prefWidth="693.0" BorderPane.alignment="CENTER">
+         <left>
+            <Button maxHeight="-Infinity" minHeight="-Infinity" mnemonicParsing="false" onAction="#butTextAction" prefHeight="20.0" prefWidth="53.0" text="Texto" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets left="5.0" />
+               </BorderPane.margin>
+               <font>
+                  <Font name="System Bold" size="10.0" />
+               </font>
+            </Button>
+         </left>
+         <center>
+            <ProgressBar fx:id="progress" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="620.0" progress="0.0" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets left="10.0" right="5.0" />
+               </BorderPane.margin>
+            </ProgressBar>
+         </center>
+      </BorderPane>
+   </bottom>
+</BorderPane>
